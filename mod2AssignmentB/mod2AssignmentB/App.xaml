@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mod2AssignmentB.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style x:Key="DarkEntryStyle" TargetType="Entry">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="PlaceholderColor" Value="GhostWhite" />
+                
+            </Style>
+            <Style x:Key="DarkPickerStyle" TargetType="Picker">
+                <Setter Property="TextColor" Value="black" />
+                <!--<Setter Property="PlaceholderColor" Value="#888888" />-->
+                
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
+
+
+

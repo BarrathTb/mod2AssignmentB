@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:mod2AssignmentB"
+             x:Class="mod2AssignmentB.MainPage">
+
+    <StackLayout BackgroundColor="#F8F8F8">
+        <Frame BackgroundColor="#212121" CornerRadius="20" Margin="20" HasShadow="True">
+            <Label Text="Are You Old Enough to Drink?" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <StackLayout Spacing="15">
+            <Frame BackgroundColor="#333333" CornerRadius="10" HasShadow="True" Margin="20">
+                <Entry x:Name="AgeEntry" Placeholder="Enter your age" Style="{StaticResource DarkEntryStyle}" FontSize="16"/>
+            </Frame>
+
+            <Button Grid.Column="0" Text="Calculate" Clicked="CalculateButton_Clicked" BackgroundColor="#212121" TextColor="White" FontSize="20" CornerRadius="10" Margin="20" />
+        </StackLayout>
+
+        <Label x:Name="ResultLabel" TextColor="Black" FontSize="24" HorizontalTextAlignment="Center" Margin="20"/>
+
+        <Frame BackgroundColor="White" CornerRadius="10" HasShadow="True" Margin="20">
+            <Picker x:Name="CountryPicker" Title="Select a Country" Style="{StaticResource DarkPickerStyle}" FontSize="16" Margin="20" >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type local:Country}">
+                        <x:Static Member="local:Country.UnitedStates" />
+                        <x:Static Member="local:Country.Canada" />
+                        <x:Static Member="local:Country.UnitedKingdom" />
+                        <x:Static Member="local:Country.Australia" />
+                        <x:Static Member="local:Country.NewZealand" />
+                        <x:Static Member="local:Country.Germany" />
+                        <x:Static Member="local:Country.France" />
+                        <x:Static Member="local:Country.Italy" />
+                        <x:Static Member="local:Country.Spain" />
+                        <x:Static Member="local:Country.Japan" />
+                        <x:Static Member="local:Country.SouthKorea" />
+                        <x:Static Member="local:Country.China" />
+                        <x:Static Member="local:Country.India" />
+                        <x:Static Member="local:Country.Brazil" />
+                        <x:Static Member="local:Country.Mexico" />
+                        <x:Static Member="local:Country.Argentina" />
+                        <x:Static Member="local:Country.Russia" />
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+        </Frame>
+    </StackLayout>
+</ContentPage>
+
